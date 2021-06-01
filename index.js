@@ -12,7 +12,7 @@ bot.on("ready", async() => {
     ]
 
     setInterval(function() {
-        let status = status2[Math.floor(Math.random() * státuszok.length)]
+        let status = status2[Math.floor(Math.random() * status2.length)]
 
         bot.user.setActivity(status, { type: "STREAMING" })
     }, 3000)
