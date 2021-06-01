@@ -31,7 +31,7 @@ bot.on("message", async message => {
     }
     
      if (cmd === `${prefix}edit`) {
-        message.channel.send(`${message.author.username} edit!`).then(asyncmsg => {
+        message.channel.send(`${message.author.username} edit1!`).then(asyncmsg => {
             setTimeout(() => {
                 msg.edit('edit2');
             }, 1000);
