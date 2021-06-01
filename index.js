@@ -30,37 +30,7 @@ bot.on("message", async message => {
         message.channel.send("working");
     }
     
-     if (cmd === `${prefix}edit`) {
-        message.channel.send(`${message.author.username} edit1!`).then(asyncmsg => {
-            setTimeout(() => {
-                msg.edit('edit2');
-            }, 1000);
-            setTimeout(() => {
-                msg.edit('edit3');
-            }, 1800);
-            setTimeout(() => {
-                msg.edit('edit4 ');
-            }, 2500);
-            setTimeout(() => {
-                msg.edit('edit5 ');
-            }, 3000);
-            setTimeout(() => {
-                msg.edit('edit6 ');
-            }, 3500);
-            setTimeout(() => {
-                msg.edit('edit7');
-            }, 4000);
-            setTimeout(() => {
-                msg.edit('edit8');
-            }, 4500);
-            setTimeout(() => {
-                msg.edit('edit9 ');
-            }, 5000);
-            setTimeout(() => {
-                msg.edit(`${message.author.username} <-- he is a good boi `);
-            }, 5500);
-        });
-    } 
+ 
     
      if(cmd ==="report"){
     if(message.channel.type === 'dm') return message.reply("You cant use it here");
