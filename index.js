@@ -79,7 +79,7 @@ bot.on("message", async message => {
     //embed
     const embed = new Discord.MessageEmbed()
     .setTitle('Report')
-    .setDescription(`*${report_usr} has been reported!*\n **Indoka: ${reason}**\n *notifier: ${message.author.username}*\n on server?: ${message.guild.name}`)
+    .setDescription(`*${report_usr} has been reported!*\n **Reason: ${reason}**\n *notifier: ${message.author.username}*\n on server?: ${message.guild.name}`)
     .setFooter(bot.user.username, bot.user.displayAvatarURL())
     .setTimestamp()
     .setColor("RANDOM")
