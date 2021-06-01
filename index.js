@@ -26,8 +26,8 @@ bot.on("message", async message => {
 
     
     
-  if (cmd === `${prefix}command1`) {
-        message.channel.send("working");
+  if (cmd === `${prefix}Command`) {
+        message.channel.send("answer");
     }
     
  
@@ -35,7 +35,7 @@ bot.on("message", async message => {
      if(cmd ==="report"){
     if(message.channel.type === 'dm') return message.reply("You cant use it here");
     const report_usr = message.mentions.users.first();
-    const channel_id = "849331162718797835"; 
+    const channel_id = "Your channel id here"; 
     const reason = message.content.slice(30);
  
     if(!report_usr){
