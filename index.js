@@ -6,8 +6,9 @@ bot.on("ready", async() => {
     console.log('${bot.user.username} Your bot has started')
 
     let status2 = [
-        "Sub to me",
-        "Sub to BerryGod",
+        "Your Status here",
+        "Your status here or you can copy paste ",
+        "like this ",
     ]
 
     setInterval(function() {
@@ -30,7 +31,7 @@ bot.on("message", async message => {
     }
     
      if (cmd === `${prefix}edit`) {
-        message.channel.send(`${message.author.username} Adj egy szál cigit!`).then(asyncmsg => {
+        message.channel.send(`${message.author.username} edit!`).then(asyncmsg => {
             setTimeout(() => {
                 msg.edit('edit2');
             }, 1000);
