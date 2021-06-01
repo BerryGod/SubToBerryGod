@@ -65,7 +65,7 @@ bot.on("message", async message => {
      if(cmd ==="report"){
     if(message.channel.type === 'dm') return message.reply("You cant use it here");
     const report_usr = message.mentions.users.first();
-    const channel_id = "Your channel id"; 
+    const channel_id = "849331162718797835"; 
     const reason = message.content.slice(30);
  
     if(!report_usr){
